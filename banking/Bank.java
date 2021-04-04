@@ -24,5 +24,4 @@ public class Bank {
     public Customer getCustomer(int index) {
         return this.customer.get(index);
     }
-
 }
