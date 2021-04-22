@@ -5,9 +5,15 @@ public class Customer {
     private String lastName;
     private Account account;
 
-    public Customer(String f, String l){
+    public Customer(){
+        this.firstName = "";
+        this.lastName = "";
+    }
+
+    public Customer(String f, String l, Account account){
         this.firstName = f;
         this.lastName = l;
+        setAccount(account);
     }
 
     public String getFirstName() {
@@ -20,6 +26,14 @@ public class Customer {
 
     public Account getAccount() {
         return account;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public void setAccount(Account acct) {
