@@ -15,19 +15,13 @@ public class Account {
         if (amt > 0){
             balance += amt;
             return  true;
-        }
-        else {
-            return false;
-        }
+        } return false;
     }
 
     public boolean withdraw(double amt){
         if (amt <= balance){
             balance -= amt;
             return true;
-        }
-        else{
-            return false;
-        }
+        } return false;
     }
 }
