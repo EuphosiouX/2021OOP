@@ -1,6 +1,5 @@
 package com.application.banking;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Driver {
